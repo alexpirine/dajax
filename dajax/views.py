@@ -17,7 +17,7 @@ from django.views.decorators.http import require_GET
 @require_GET
 @cache_control(max_age=getattr(settings, 'DAJAX_CACHE_AGE', 3600))
 def get_url(request, url_name):
-    url_prefix = getattr(settings, 'DAJAX_URL_PREFIX', '')
+    url_prefix = getattr(settings, 'DAJAX_URL_NAME_PREFIX', '')
 
     try:
         url = reverse(url_prefix+url_name, kwargs=request.GET.dict())

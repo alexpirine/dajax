@@ -5,7 +5,7 @@ from setuptools import find_packages, setup
 if __name__ == '__main__':
     setup(
         name='Dajax',
-        version='1.2',
+        version='1.3',
         url='https://github.com/alexpirine/dajax',
         license='Public Domain',
         author='Alexandre Syenchuk',
